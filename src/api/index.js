@@ -64,6 +64,7 @@ exports.getData = async ({ createNodeId }, pluginOptions) => {
       cv3ID: product.prodId,
       categories: catIds,
       categoryIDs: catIds, // will consumers want this array?
+      productImage: product.images.imageLinks[0].popup
     }
 
     // add product to root object
